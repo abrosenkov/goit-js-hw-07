@@ -2,7 +2,7 @@ const input = document.querySelector("#name-input");
 const output = document.querySelector("#name-output");
 
 const adValue = () => {
-  const text = input.value.trim();
+  const text = input.value;
   return (output.textContent = text === "" ? "Anonymous" : text);
 };
 
