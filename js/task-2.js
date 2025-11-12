@@ -27,9 +27,11 @@ const images = [
 
 const list = document.querySelector(".gallery");
 
-const item = images.map(
-  (elem) =>
-    `<li class="list-item"><img src="${elem.url}" alt="${elem.alt}" class="item-img" /></li>`
-);
+const item = images
+  .map(
+    (elem) =>
+      `<li class="list-item"><img src="${elem.url}" alt="${elem.alt}" class="item-img" /></li>`
+  )
+  .join("");
 
 list.innerHTML = item;
